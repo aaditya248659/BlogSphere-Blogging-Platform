@@ -28,7 +28,7 @@ build/
 .idea/
 *.suo
 *.ntvs*
-*.njsproj
+*.njsproj 
 *.sln
 *.sw?
 .DS_Store
