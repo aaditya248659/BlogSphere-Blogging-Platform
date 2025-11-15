@@ -13,7 +13,7 @@ const TrendingPosts = () => {
 
   const fetchTrending = async () => {
     try {
-      const response = await axios.get('/posts/trending?limit=5');
+      const response = await axios.get('/api/posts/trending');
       setTrending(response.data.data);
     } catch (error) {
       console.error('Error fetching trending posts:', error);
