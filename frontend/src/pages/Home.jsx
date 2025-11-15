@@ -32,7 +32,7 @@ const Home = () => {
       if (filterParams.tag) params.append('tag', filterParams.tag);
       if (filterParams.featured) params.append('featured', 'true');
 
-      const response = await axios.get(`/api/posts?${params.toString()}`);
+      const response = await axios.get(`/posts?${params.toString()}`);
       setPosts(response.data.data);
       setTotalPages(response.data.pages);
     } catch (error) {
